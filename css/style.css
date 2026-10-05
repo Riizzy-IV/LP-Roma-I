@@ -2083,27 +2083,42 @@ button {
     height: 44px;
   }
 
+  /* Faixa de lazer: 3 colunas iguais com divisórias */
   .galeria__features {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-content: space-between;
-    gap: 8px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+    padding: 18px 0;
+    border-top: 1px solid rgba(175, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(175, 0, 0, 0.15);
   }
 
   .galeria__feature {
+    position: relative;
     flex-direction: column;
-    gap: 8px;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 0 6px;
     font-size: 13px;
+    line-height: 1.25;
     text-align: center;
+    white-space: normal;
   }
 
   .galeria__feature img {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
   }
 
   .galeria__feature:not(:last-child)::after {
-    display: none;
+    content: "";
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    right: 0;
+    width: 1px;
+    height: auto;
+    background: rgba(175, 0, 0, 0.25);
   }
 
   .galeria__feature span {
