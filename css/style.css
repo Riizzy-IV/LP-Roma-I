@@ -1422,15 +1422,6 @@ button {
   flex-shrink: 0;
 }
 
-.footer__legal {
-  padding-bottom: 47px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.25;
-  letter-spacing: 0.25px;
-}
-
 .footer__bottom {
   display: flex;
   align-items: center;
@@ -1455,6 +1446,15 @@ button {
 .footer__credit img {
   width: 93px;
   height: auto;
+}
+
+.footer__credit-link {
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+.footer__credit-link:hover {
+  opacity: 0.8;
 }
 
 /* =========================================================
@@ -2305,8 +2305,7 @@ button {
     gap: 28px;
   }
 
-  .footer__top,
-  .footer__legal {
+  .footer__top {
     padding-bottom: 28px;
   }
 
@@ -2321,10 +2320,6 @@ button {
 
   .footer__address img {
     margin-top: 2px;
-  }
-
-  .footer__legal {
-    font-size: 11px;
   }
 
   .footer__bottom {
