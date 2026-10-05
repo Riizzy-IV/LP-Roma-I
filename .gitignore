@@ -1,0 +1,10 @@
+# Configuração local do Claude Code
+.claude/
+
+# Originais em alta (≈50 MB) — o site usa as versões otimizadas em assets/img/galeria
+assets/img/carrossel/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
